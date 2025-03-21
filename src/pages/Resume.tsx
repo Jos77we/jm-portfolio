@@ -1,4 +1,3 @@
-import React from 'react';
 import HeroSection from '../components/resume/HeroSection';
 import OverviewCard from '../components/resume/OverviewCard';
 import SkillsGrid from '../components/resume/SkillsGrid';
