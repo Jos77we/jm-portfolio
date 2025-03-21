@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { MessageSquare } from 'lucide-react';
 import { projects } from '../data/projects';
 import ProjectFilter from '../components/projects/ProjectFilter';
