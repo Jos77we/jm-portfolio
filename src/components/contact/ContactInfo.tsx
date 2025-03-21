@@ -4,8 +4,8 @@ const contactInfo = [
   {
     icon: <Mail className="w-5 h-5" />,
     label: 'Email',
-    value: 'onecelltechnologies@gmail.com',
-    href: 'mailto:onecelltechnologies@gmail.com',
+    value: 'josemaina207@gmail.com',
+    href: 'mailto:josemaina207@gmail.com',
   },
   {
     icon: <Phone className="w-5 h-5" />,
@@ -23,7 +23,7 @@ const socialLinks = [
   },
   {
     icon: <Linkedin className="w-5 h-5" />,
-    href: 'https://linkedin.com/in/yourusername',
+    href: 'https://www.linkedin.com/in/joseph-maina-86618726b/',
     label: 'LinkedIn',
   },
 ];
