@@ -9,16 +9,21 @@ interface EmailData {
 
 export const sendEmail = async (data: EmailData) => {
   try {
-   
-    const formattedData: Record<string, unknown> = { ...data };
+    // Ensure all values are strings
+    const formattedData: Record<string, string> = {
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      message: data.message,
+    };
 
     const response = await emailjs.send(
-      'service_uhnmdsj',
-      'template_2ggu9mf',
-      formattedData, 
-      'ZyoKGWMmWOuZWgoY0'
+      'service_y6ubxfw',   // Your EmailJS service ID
+      'template_qou6e2c',  // Your EmailJS template ID
+      formattedData,       // Ensure correct data structure
+      'pBInar79GZWbUBmxW'  // Your EmailJS public key
     );
-    
+
     return response;
   } catch (error) {
     console.error('Email sending failed:', error);
